@@ -1,0 +1,95 @@
+/* ProjectCard.module.css */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover {
+  border-color: rgba(200,169,110,.3);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.3);
+}
+
+.card:hover::before { opacity: 1; }
+
+/* Featured card spans full row */
+.featured {
+  grid-column: 1 / -1;
+}
+
+.num {
+  font-family: var(--ff-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+}
+
+.name {
+  font-family: var(--ff-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.featured .name { font-size: 1.7rem; }
+
+.desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  max-width: 680px;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+  list-style: none;
+}
+
+.techTag {
+  background: rgba(126,184,200,.08);
+  border: 1px solid rgba(126,184,200,.2);
+  color: var(--accent2);
+  font-family: var(--ff-mono);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+}
+
+.link {
+  font-family: var(--ff-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1px solid rgba(200,169,110,.3);
+  padding-bottom: 1px;
+  transition: border-color 0.2s;
+}
+
+.link:hover { border-color: var(--accent); }
+
+@media (max-width: 700px) {
+  .featured { grid-column: auto; }
+}

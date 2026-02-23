@@ -1,0 +1,51 @@
+/* Education.module.css */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  transition: border-color 0.25s;
+}
+
+.item:hover { border-color: rgba(200,169,110,.3); }
+
+.year {
+  font-family: var(--ff-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  white-space: nowrap;
+  border-right: 1px solid var(--border);
+  padding-right: 1.5rem;
+  text-align: center;
+}
+
+.year span {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+.degree {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.institution {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+  font-family: var(--ff-mono);
+}

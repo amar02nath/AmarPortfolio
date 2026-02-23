@@ -1,0 +1,33 @@
+/* Footer.module.css */
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--ff-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links a {
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.links a:hover { color: var(--accent); }
+
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+}

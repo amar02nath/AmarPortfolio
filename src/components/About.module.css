@@ -1,0 +1,77 @@
+/* About.module.css */
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.objective {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  border-left: 2px solid var(--accent);
+  padding-left: 1.5rem;
+}
+
+.stack { margin-top: 2.5rem; }
+
+.stackLabel {
+  font-family: var(--ff-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.tagsColumn {
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.tag {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.8rem;
+  border-radius: 2px;
+  font-family: var(--ff-mono);
+  font-size: 0.75rem;
+  color: var(--text);
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tagHighlight {
+  border-color: rgba(200,169,110,.4);
+  color: var(--accent);
+}
+
+.side { }
+
+.sideHeading {
+  font-family: var(--ff-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.sideHeadingSpaced { margin-top: 1.5rem; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
