@@ -42,7 +42,7 @@ export const projects = [
     name: 'YumCraft AI',
     desc: 'An AI-powered recipe generator that suggests meals based on leftover food or available ingredients at home. Combines modern front-end tooling with intelligent AI integration for a seamless cooking companion experience.',
     tech: ['ReactJS', 'Vite', 'JavaScript', 'AI Integration'],
-    link: 'https://vercel.com/amar02naths-projects/yum-craft-ai-chef',
+    link: 'https://yum-craft-ai-chef.vercel.app',
     featured: true,
   },
   {
