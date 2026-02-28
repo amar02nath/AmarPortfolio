@@ -1,0 +1,28 @@
+/* Skills.module.css */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  list-style: none;
+}
+
+.item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.9rem 1.2rem;
+  font-size: 0.875rem;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.item:hover {
+  border-color: var(--accent2);
+  color: var(--accent2);
+}
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}

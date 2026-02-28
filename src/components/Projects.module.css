@@ -1,0 +1,12 @@
+/* Projects.module.css */
+
+.section {
+  background: linear-gradient(180deg, transparent, rgba(20,20,20,.5), transparent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+}
